@@ -1,8 +1,8 @@
-.Header-bg {
+.header-bg {
   background-color: var(--cor-12);
 }
 
-.Header {
+.header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -12,58 +12,55 @@
   padding-bottom: 20px;
 }
 
-.Header-menu {
+.header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.Header-menu a {
+.header-menu a {
   display: inline-block;
   padding: 16px 0px;
   position: relative;
 }
 
-.Header-menu a:after {
+.header-menu a:after {
   content: "";
   display: block;
   height: 2px;
   width: 0px;
-  background-color: var(--cor-0);
+  background: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
 }
 
-.Header-menu a:hover:after {
+.header-menu a:hover:after {
   width: 100%;
 }
 
 @media (max-width: 800px) {
-  .Header-menu {
+  .header-menu {
     gap: 20px;
   }
-
-  .Header-menu a {
-    background-color: var(--cor-11);
+  .header-menu a {
+    background: var(--cor-11);
     padding: 12px 16px;
     border-radius: 4px;
   }
-
-  .Header-menu a:hover {
+  .header-menu a:hover {
     background-color: var(--cor-10);
   }
-
-  .Header a:after {
+  .header a:after {
     display: none;
   }
 }
 
 @media (max-width: 600px) {
-  .Header-menu {
+  .header-menu {
     gap: 12px;
   }
-  .Header-menu a {
+  .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
   }

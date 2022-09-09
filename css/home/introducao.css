@@ -1,5 +1,5 @@
 .introducao-bg {
-  background-color: var(--cor-12);
+  background: var(--cor-12);
   box-shadow: inset 0 -120px var(--cor-0);
 }
 
@@ -33,20 +33,18 @@
   .introducao-bg {
     background: var(--cor-11);
     padding-top: 40px;
-    box-shadow: inset 0 -60px var(--cor-0);
+    box-shadow: inset 0 -60px #ffffff;
   }
   .introducao {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-
   .introducao-conteudo {
     padding-bottom: 0px;
   }
   .introducao h1 {
     margin-bottom: 16px;
   }
-
   .introducao img {
     height: 300px;
     width: 100%;

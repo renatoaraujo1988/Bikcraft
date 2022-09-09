@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
-
-/* Estilos gerais */
 @import "./global/global.css";
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
 
-/* Cabeçalho */
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* Utilidades */
 @import "./utilidades/componentes.css";
@@ -19,3 +16,6 @@
 
 /* Bicicletas */
 @import "./bicicletas/bicicletas-lista.css";
+
+/* Seguros */
+@import "./seguros/seguros.css";

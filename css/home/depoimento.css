@@ -6,10 +6,10 @@
 }
 
 .depoimento img {
-  border-radius: 0px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0px;
 }
 
 .depoimento-conteudo {
@@ -18,11 +18,11 @@
 }
 
 .depoimento-conteudo p {
+  max-width: 32ch;
   font-family: "Merriweather", serif;
   font-style: italic;
   font-weight: 900;
   margin-bottom: 32px;
-  max-width: 32ch;
   position: relative;
 }
 
@@ -34,13 +34,13 @@
 }
 
 .depoimento p::before {
-  content: '"';
+  content: "“";
   left: -50px;
   top: -20px;
 }
 
 .depoimento p::after {
-  content: '"';
+  content: "”";
 }
 
 @media (max-width: 800px) {
@@ -48,13 +48,11 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .depoimento-conteudo {
-    padding: 40px 20px;
-    justify-self: center;
-  }
-
   .depoimento img {
     max-height: 200px;
+  }
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    margin: auto;
   }
 }
