@@ -1,74 +1,112 @@
 .bicicletas-bg {
-    background-color: var(--cor-11);
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0%
+  );
 }
 
 .bicicletas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .bicicletas-imagem {
-    display: grid;
+  display: grid;
 }
 
 .bicicletas-imagem img {
-    grid-area: 1/1;
+  grid-area: 1/1;
 }
 
 .bicicletas-imagem span {
-    grid-area: 1/1;
-    place-self: start end;
-    margin-top: 20px;
-    background: var(--cor-12);
-    display: inline-block;
-    padding: 8px 16px 8px 8px;
-    border-radius: 4px 0 0 4px;
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background: var(--cor-12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
 }
 
 .bicicletas-conteudo {
-    display: grid;
-    grid-template-columns: 1fr auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
 }
 
-.bicicletas h2, .bicicletas p {
-    grid-column: 1/-1;
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-especificacoes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 32px;
 }
 
 .bicicletas h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .bicicletas h2::before {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 8px;
-    background-color: var(--cor-p1);
-    margin-bottom: 8px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
 }
 
 .bicicletas p {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
+  margin-right: 15px;
 }
 
 .bicicletas a {
-    place-self: end;
+  place-self: end;
+  margin-right: 20px;
 }
 
 .bicicletas li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
 }
 
-.bicicletas ul {
-    display: grid;
-    gap: 16px;
+.bicicletas li + li {
+  margin-top: 20px;
 }
 
 .bicicletas-conteudo img {
-    width: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600pc) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas ul {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+  }
+  .bicicletasa a {
+    place-self: start;
+  }
 }
