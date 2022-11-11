@@ -14,11 +14,12 @@
 
 .depoimento-conteudo {
   padding: 40px 40px 80px 80px;
-  align-self: end;
+  align-self: center;
 }
 
 .depoimento-conteudo p {
   max-width: 32ch;
+  font-size: xx-large;
   font-family: "Merriweather", serif;
   font-style: italic;
   font-weight: 900;
@@ -54,5 +55,9 @@
   .depoimento-conteudo {
     padding: 40px 20px;
     margin: auto;
+  }
+  .depoimento-conteudo p {
+    font-size: 1.5rem;
+    max-width: 28ch;
   }
 }

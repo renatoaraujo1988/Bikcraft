@@ -1,7 +1,13 @@
 .bicicletas-lista {
   padding-top: 60px;
   padding-bottom: 120px;
+  display: block;
 }
+
+/* .bicicletas-lista.mostrar {
+  visibility: hidden;
+  height: 50px;
+} */
 
 .bicicletas-lista h2 {
   margin-bottom: 40px;
