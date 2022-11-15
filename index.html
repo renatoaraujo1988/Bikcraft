@@ -10,6 +10,7 @@
 
   <link rel="preload" href="./style.css" as="style">
   <link rel="stylesheet" href="./style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -32,19 +33,19 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao ativar" href="#bicicletas-listagem">Escolha a sua</a>
+        <h1 data-anime="400" class="fadeInLeft font-1-xxl cor-0 fadeInDown">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p data-anime="600" class="fadeInLeft font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a data-anime="800" class="fadeInLeft botao ativar" href="#bicicletas-listagem">Escolha a sua</a>
       </div>
       <picture>
         <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
-        <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
+        <img data-anime="1400" class="fadeInDown" src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
       </picture>
     </div>
   </main>
 
   <article class="bicicletas-lista mostrar" id="bicicletas-listagem">
-    <h2 class="container font-1-xxl">Escolha a sua<span class="cor-p1">.</span></h2>
+    <h2 data-anime="1000" class="fadeInLeft container font-1-xxl">Escolha a sua<span class="cor-p1">.</span></h2>
     <ul>
       <li>
         <a href="./bicicletas/magic.html">
@@ -191,7 +192,7 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Todos os direitos reservados.</p>
     </div>
   </footer>
-
+  <script src="./js/plugin/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
