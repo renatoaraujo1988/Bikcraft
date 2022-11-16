@@ -34,3 +34,7 @@ img {
 img[src$=".jpg"] {
   border-radius: 4px;
 }
+
+.padding {
+  padding-left: 30px;
+}

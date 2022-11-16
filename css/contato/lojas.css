@@ -4,6 +4,8 @@
   gap: 0 40px;
   padding-top: 120px;
   padding-bottom: 120px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .lojas h2 {
