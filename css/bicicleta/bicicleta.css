@@ -95,14 +95,20 @@
   color: var(--cor-6);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 935px) {
   .bicicleta {
     grid-template-columns: 1fr;
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .bicicleta img {
+    max-width: 100%;
+  }
   .bicicleta-imagens {
     grid-row: 2;
+  }
+  .img2 {
+    display: none;
   }
 }
 
