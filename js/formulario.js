@@ -1,9 +1,9 @@
 const formulario = document.querySelector("form");
 function formularioEnviado(resposta) {
     if(resposta.ok) {
-        formulario.innerHTML = "<p class='font-2-l' style='text-align: center; grid-column: 1/-1; padding: 100px; border-radius: 5px; background: #f7f7f7;'><span style='background: #317A00; color: #000000;'>Mensagem enviada com SUCESSO!</span> Aguarde nosso contato. Voltar à <a style='text-align: center;' class='botao' href='./'>Página Inicial</a></p>"
+        formulario.innerHTML = "<p class='font-2-l' style='text-align: center; grid-column: 1/-1; margin: 0; padding: 10px 20px 0 20px; background: #317A00; color: #ffffff;'> Mensagem enviada com SUCESSO!</p><p class='font-2-l' style='text-align: center; grid-column: 1/-1; margin: 0; padding: 0 20px 60px 20px; background: #f7f7f7'> Aguarde nosso contato. Voltar à <a style='margin: 0 auto; display: block;' class='botao' href='./'>Página Inicial</a></p>"
     } else {
-        formulario.innerHTML = "<p class='font-2-l' style='text-align: center; grid-column: 1/-1; padding: 100px; border-radius: 5px; background:#f7f7f7;><span style='color: #000000; background: #E00000;'>Ops... Houve um erro!</span> Favor nos enviar uma mensagem de e-mail para contato@renatoaraujo.fun</p>"
+        formulario.innerHTML = "<p class='font-2-l' style='text-align: center; grid-column: 1/-1; margin: 0; padding: 60px 20px 0 20px; background: #E00000; color: #ffffff;';>Ops... Houve um erro!</p> <p class='font-2-l' style='text-align: center; grid-column: 1/-1; margin: 0; padding: 0 20px 60px 20px; background: #f7f7f7/'>Favor nos enviar uma mensagem de e-mail para contato@renatoaraujo.fun</p>"
     }
 }
 function enviarFormulario(event) {
